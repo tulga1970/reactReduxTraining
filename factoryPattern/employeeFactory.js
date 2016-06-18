@@ -22,13 +22,13 @@ var factory = function(type){
             return new Employee();
         }
     }
-    
+
     try{
         var instance = constructors[type]();
     }catch(e){
         throw "'" + type + "' is not supported type";
     }
-    
+
     return instance;
 }
 
